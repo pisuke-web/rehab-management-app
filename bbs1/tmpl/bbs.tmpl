@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="tmpl/tmpl.css">
+<title>申し送り投稿ページ</title>
+</head>
+<body>
+<a href="../">診療管理システムトップページに戻る</a>
+
+<p>リハビリテーション科全体への共有事項を記入してください</p>
+
+<h2>申し送り入力フォーム</h2>
+
+<form action="bbs.php" method="post" enctype="multipart/form-data">
+<input type="hidden" name="mode" value="post">
+<table>
+<tr>
+	<td>入力者氏名</td>
+	<td><input type="text" name="name" size="35"></td>
+</tr>
+<tr>
+	<td colspan="2">
+		共有事項<br>
+		<textarea name="comment" cols="55" rows="6"></textarea>
+	</td>
+</tr>
+</table>
+<input type="submit" name="send" value="投稿">
+</form>
+
+<h2>申し送り一覧</h2>
+
+!bbs_data!
+
+</body>
+</html>

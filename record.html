@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リハビリ介入記録</title>
+    <link rel="stylesheet" href="record.css">
+</head>
+<body>
+<h2>リハビリ介入記録　個人ページ</h2>
+<nav aria-label="ページ移動">
+    <button type="button" id="backToSearch">患者検索に戻る</button>
+    <button type="button" id="backToPatients">患者一覧に戻る</button>
+</nav>
+<p id="pnumber">病歴番号</p><div id="patientNumber"></div>
+<p id="pname">患者氏名</p><div id="patientName"></div>
+<p id="precord">介入記録</p>
+<p>介入日<input id="date" type="date"></p>
+<p>担当療法士<input id="therapist" type="text" placeholder="療法士氏名"></p>
+<textarea id="soap" class="soap">S:
+
+O:
+
+A:
+
+P:</textarea>
+<button id="addRecordBtn" type="button">記録追加</button>
+<table id="recordTable" border="1">
+    <thead><tr><th>介入日</th><th>担当療法士</th><th>SOAP</th></tr></thead>
+    <tbody id="recordList"></tbody>
+</table>
+<script src="record.js"></script>
+</body>
+</html>

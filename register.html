@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h2>患者登録</h2>
+    <input type="text" id="number" name="number" placeholder="病歴番号">
+    <input type="text" id="name" name="name" placeholder="患者氏名">
+    <label><input type="radio" name="gender" value="男性"> 男性</label>
+    <label><input type="radio" name="gender" value="女性"> 女性</label>&nbsp;&nbsp;
+    <p>生年月日<input type="date" id="age" name="age"></p>
+    <p>開始または転入日<input type="date" id="start" name="start"></p>
+    <p>主訴となる傷病名<input type="text "id="disease" name="disease" placeholder="傷病名"></p>
+    
+    <button id="addBtn">登録</button>
+    <h2>患者一覧</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>病歴番号</th>
+                <th>氏名</th>
+                <th>性別</th>
+                <th>生年月日</th>
+                <th>開始／転入日</th>
+                <th>傷病名</th>
+                <th>削除</th>
+            </tr>
+        </thead>
+        <tbody id="patientList"></tbody>
+    </table>
+
+    
+
+
+<script src = "register.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+h2{background-color: purple;}
+h2{color: white;}
+
+#pname{background-color:grey}
+#pname{color: white}
+
+#pnumber{background-color:grey}
+#pnumber{color: white}
+
+#precord{background-color:gray}
+#precord{color: white}
+
+
+.soap{
+    width: 300px;
+    height: 150px;
+}
